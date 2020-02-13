@@ -30,7 +30,6 @@ import com.riodi.cursomc.repositories.ItemPedidoRepository;
 import com.riodi.cursomc.repositories.PagamentoRepository;
 import com.riodi.cursomc.repositories.PedidoRepository;
 import com.riodi.cursomc.repositories.ProdutoRepository;
-import com.sun.xml.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
 
 @SpringBootApplication
 public class CursomcApplication implements CommandLineRunner {
