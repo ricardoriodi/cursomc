@@ -28,7 +28,7 @@ public class Cliente implements Serializable{
 	private Integer id;
 	private String nome;
 	private String email;
-	private String cpfOuConpj;
+	private String cpfOuCnpj;
 	private Integer tipo;
 	
 	@OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
@@ -45,12 +45,12 @@ public class Cliente implements Serializable{
 	public Cliente() {
 	}
 
-	public Cliente(Integer id, String nome, String email, String cpfOuConpj, TipoCliente tipo) {
+	public Cliente(Integer id, String nome, String email, String cpfOuCnpj, TipoCliente tipo) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.email = email;
-		this.cpfOuConpj = cpfOuConpj;
+		this.cpfOuCnpj = cpfOuCnpj;
 		this.tipo = (tipo==null) ? null : tipo.getCod();
 	}
 
@@ -78,12 +78,12 @@ public class Cliente implements Serializable{
 		this.email = email;
 	}
 
-	public String getCpfOuConpj() {
-		return cpfOuConpj;
+	public String getcpfOuCnpj() {
+		return cpfOuCnpj;
 	}
 
-	public void setCpfOuConpj(String cpfOuConpj) {
-		this.cpfOuConpj = cpfOuConpj;
+	public void setcpfOuCnpj(String cpfOuCnpj) {
+		this.cpfOuCnpj = cpfOuCnpj;
 	}
 
 	public TipoCliente getTipo() {
